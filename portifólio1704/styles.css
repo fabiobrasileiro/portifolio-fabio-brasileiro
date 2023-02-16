@@ -1,0 +1,697 @@
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-size: 100vw;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+Ul{
+    list-style: none;
+    
+}
+li{
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link p{
+    margin: 30px 10px;
+}
+.nav-link p:hover{
+    color: #40CEFB;
+    height: 100%;
+    width: 100%;
+}
+header{
+    height: 120px;
+    width: 90vw;
+    background-color: rgba(14, 14, 14, 0.3);
+    position: fixed;
+}
+
+#containerNav{
+    height: 100%;
+    width: 100%;
+    padding: 0 18% 0 15.5%;
+    width: 100vw;
+}
+#headerButton{
+    background-color: #40CEFB;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 27px;
+}
+
+#headerButton:hover{
+    transform: translateX(20px);
+    animation: 6s ease-in-out;
+}
+#headerButton p{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 9px 0;
+    color: white;
+    background-color: transparent;
+}
+.brand{
+   height: 60px;
+}
+
+@media screen and (max-width:1330px){
+    .navbar-expand-sm{
+        display: none;
+    }
+}
+
+
+/* home section */
+.containerhome{
+    display: flex;
+    padding: 11% 6% 0 15%;
+    height: 100vh;
+    background-color: #0E0E0E;
+}
+
+.home .rightSide{
+    margin: 50px 0;
+}
+.home{
+    color: white;
+}
+.rightSide p{
+    font-size: 19px;
+    letter-spacing: 4px;
+    line-height: 0;
+}
+.home h1{
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: 700;
+}
+.home h3{
+    margin: 35px 0 10px;
+}
+.home span{
+    color: #40CEFB;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.home h2{
+    font-size: 20px;
+    width: 550px;
+}
+#homeButton{
+    background-color: #40CEFB;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 150px;
+    margin: 40px 0;
+    
+}
+#homeButton p{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px 0;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+
+}
+#homeButton:hover{
+    transform: translateY(-20px);
+    animation: 3s ease-in;
+}
+.home img{
+    height: 500px;
+}
+.home .responsiveImg{
+    display: none;
+}
+@media screen and (max-width:1330px) {
+    .containerhome{
+        display: block; 
+        width: 100vw;  
+        padding: 11% 15% 0;    
+    }
+    .rightSide p, h1, h3, span, h2{
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+    .home h2{
+        font-size: 20px;
+        width: 100%;
+    } 
+    #homeButton{
+        margin: 40px 37%;
+        position: relative;
+        z-index: 10;
+    }
+    .home .leftSide{
+        position: absolute;
+        left: -12px;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .home .responsiveImg{
+        display: block;
+    }
+    .home img{
+        display: none;
+        
+    }
+}
+@media screen and (max-width:698px) {
+    .containerhome{
+        display: block; 
+        width: 100vw;  
+        padding: 11% 15% 0;    
+    }
+    .rightSide , h1, h3, span, h2{
+        text-align: left;
+        position: relative;
+        z-index: 10;
+    }
+    .rightSide p{
+        font-size: 19px;
+        letter-spacing: 0px;
+        line-height: 0;
+    }
+    .home h2{
+        font-size: 20px;
+        width: 100%;
+    } 
+    #homeButton{
+        margin: 40px 0%;
+        position: relative;
+        z-index: 10;
+    }
+    .home .leftSide{
+        position: absolute;
+        left: -12px;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .home .responsiveImg{
+        display: block;
+    }
+    .home img{
+        display: none;
+        
+    }
+}
+@media screen and (max-width:528px) {
+    .containerhome{
+        display: block; 
+        width: 100vw;  
+        padding: 11% 10% 0;    
+    }
+    .rightSide h1, h3, span, h2{
+        text-align: center;
+        position: relative;
+        z-index: 10;
+    }
+    .rightSide h1{
+        font-size: 16vw;
+    }
+    .home h2{
+        font-size: 20px;
+        width: 100%;
+    } 
+    #homeButton{
+        margin: 40px 15%;
+        position: relative;
+        z-index: 10;
+    }
+    .home .leftSide{
+        position: absolute;
+        left: -12px;
+        bottom: 0px;
+        z-index: 1;
+    }
+    .home .responsiveImg{
+        display: block;
+    }
+    .home img{
+        display: none;
+        
+    }
+}
+
+
+
+
+
+
+
+
+/* sobre section
+
+
+
+
+
+*/
+
+.sobreMim{
+    display: flex;
+    background-color: #1C1C1C;
+    column-gap: 90px;
+    padding: 3% 0% 0 2%;
+    width: 98.9vw;
+    color: white;
+}
+.sobreMim span{
+    color: #40CEFB;
+}
+.sobreMim .left img{
+    height: 490px;
+    margin: 0 20px 0 0 ;
+}
+.sobreMim .right{
+    margin: 70px 0 0 0 ;
+    width: 500px;
+}
+.right h2{
+    margin: 0 0 40px 0;
+}
+.right p{
+    font-size: 15px;
+}
+#sobreButton{
+    background-color: #40CEFB;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 150px;
+    color: white;
+
+    
+    margin: 40px 0;
+}
+#sobreButton p{
+    margin: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+#sobreButton:hover{
+    transform: translateY(-20px);
+    animation: 3s ease-in;
+}
+
+
+@media screen and (max-width:1330px) {
+    .sobreMim{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #1C1C1C;
+        column-gap: 90px;
+        padding: 0% 0% 0 0%;
+        width: 100vw;
+        color: white;
+    }
+    .right h6{
+        text-align: center;
+    }
+    .right p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .sobreMim .left img{
+        height: 490px;
+        margin: 0 0 0 15% ;
+    }
+    .sobreMim .right{
+        padding: 0px 16vw;
+        width: 100%;
+    }
+    #sobreButton{
+        background-color: #40CEFB;
+        width: 200px;
+        height: 70px;
+        border: none;
+        border-radius: 150px;
+        color: white;   
+        margin: 8% 34% ;
+    }
+}
+
+@media screen and (max-width:586px) {
+    .sobreMim .left img{
+        height: 80vw;
+        margin: 0 0 0 15% ;
+
+    }
+    .right h6{
+        text-align: center;
+    }
+    #sobreButton{
+        background-color: #40CEFB;
+        width: 200px;
+        height: 70px;
+        border: none;
+        border-radius: 150px;
+        color: white;   
+        margin: 8% 20% ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* serviços 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ */
+.serviços{
+    background-color: #1C1C1C;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.serviços h6{
+    text-align: center;
+    
+}
+.serviços h2{
+    text-align: center;
+    color: white;
+}
+.serviços span{
+    color: #40CEFB;
+}
+.cards{
+    display: flex;
+    
+    column-gap: 30px;
+    margin: 60px 100px;
+}
+.card{
+    background-color: #0E0E0E;
+    color: white; 
+    width: 500px ;
+}
+.color1{
+    border-bottom: 6px solid #40CEFB;
+}
+.color2{
+    border-bottom: 6px solid #ff3e77;
+}
+.color3{
+    border-bottom: 6px solid #b45dff;
+}
+.color4{
+    border-bottom: 6px solid #ff5dc1;
+}
+.card:hover{
+    background-color: #40CEFB;
+    color: white; 
+}
+.cardImg{
+    height: 150px;
+    width: 150px;
+}
+.card h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.card p{
+    font-size: 14px;
+}
+
+@media screen and (max-width:1330px) {
+    .serviços{
+        background-color: #1C1C1C;
+        height: auto;
+        padding: 80px 0;
+        width: 100vw;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 60px 10%;
+    }
+    .card{
+        width: 80vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* processos 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.fluxo{
+    background-color: #1C1C1C;
+    height: 75vh;
+    padding: 0px 0 0 0;
+}
+.fluxo h6{
+    text-align: center;
+    
+}
+.fluxo h2{
+    text-align: center;
+    color: white;
+}
+.fluxo span{
+    color: #40CEFB;
+}
+.cardSecondImg{
+    width: 70px;
+    height: 70px;
+}
+.fluxo .color4{
+    border-bottom: 6px solid #40CEFB;
+}
+.fluxo .color6{
+    border-bottom: 6px solid #ff3e77;
+}
+.fluxo .color8{
+    border-bottom: 6px solid #b45dff;  
+}
+.fluxo .color7{
+    border-bottom: 6px solid #ff5dd5;
+}
+.fluxo .color5{
+    border-bottom: 6px solid #00fc77;
+}
+
+
+@media screen and (max-width:1330px) {
+    .fluxo{
+        background-color: #1C1C1C;
+        height: auto;
+        padding: 0px 0 0 0;
+    }
+    .fluxo .cards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 60px 0 0 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contato section 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.blank{
+    display: none;
+}
+.header{
+    background-color:#1C1C1C;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+}
+.header span{
+    color: #40CEFB;
+    
+}
+.header h2{
+    font-size: 15;
+    
+}
+.header p{
+    margin: 0 auto;
+   
+}
+.contato{
+    background-color:#1C1C1C;
+    padding: 0 auto;
+    display: flex;
+    color: white;
+}
+.left .email, .local, .tel{
+    display: flex;
+   
+}
+.left{
+    margin: 110px 0 0 250px;
+}
+.left p{
+    margin-left: 20px;
+    margin-top: 46px;
+}
+.left img{
+    height: 55px;
+    margin-top: 30px;
+}
+.right{
+    margin: 100px 0 0 200px;
+}
+.input[type=text], select, textarea {
+    width:100%;
+    padding: 12px 20px;
+    border:white 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.input[type=text], select, input{
+    width: 100%;
+    border:white 1px solid;
+    border-radius: 50px;
+    background-color: transparent;
+    height: 50px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+.input[type=text], select, #email{
+    width: 100%;
+}
+.input[type=text], select, #tel{
+    width: 100%;
+}
+input[type=submit]{
+    background-color: #40CEFB;
+    color: white;
+    width: 35%;
+}
+::placeholder{
+    color: white;
+    opacity: 0.6;
+}
+#fname, #email, #tel, #message{
+    color: white;
+}
+#form{
+    display: grid;
+    grid-template-rows: 1f
+}
+
+@media screen and (max-width:1330px) {
+    .header{
+        padding-top: 60px;
+    }
+    .left{
+        margin: 110px 0 0 50px;
+    }
+    .blank{
+        background-color: #1C1C1C;
+        width: 100vw;
+        height: 12vh;
+        display: block;
+    }
+    .contato{
+        background-color:#1C1C1C;
+        padding: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .right{
+        margin: 100px 0 0 50px;
+    }
+}
